@@ -19,5 +19,7 @@ function create(req, res) {
 }
 
 function update(req, res) {
-    
+    Climb.findByIdAndUpdate(req.params.id, req.body, function() {
+        index(req, res);
+    });
 }
