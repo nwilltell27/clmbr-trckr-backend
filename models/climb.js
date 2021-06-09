@@ -14,6 +14,7 @@ const climbSchema = new Schema({
         type: String,
         required: true
     },
+    color: String,
     completed: {
         type: String,
         required: true

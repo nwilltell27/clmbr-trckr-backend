@@ -4,6 +4,7 @@ module.exports = {
     index, 
     create, 
     update,
+    delete: deleteClimb,
 }
 
 function index(req, res) {
@@ -23,3 +24,9 @@ function update(req, res) {
         index(req, res);
     });
 }
+
+function deleteClimb(req, res) {
+    Climb.findByIdAndDelete(req.params.id, function() {
+        index(req, res)
+    });
+} 
