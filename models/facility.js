@@ -6,30 +6,6 @@ const facilitySchema = new Schema({
         type: String,
         required: true
     },
-    address: {
-        type: String,
-        required: true
-    },
-    boulder: {
-        type: String,
-        required: true
-    },
-    rope: {
-        type: String,
-        required: true
-    },
-    weights: {
-        type: String,
-        required: true
-    },
-    cardio: {
-        type: String,
-        required: true
-    },
-    website: {
-        type: String,
-        required: true
-    },
     climbs: [{
         type: Schema.Types.ObjectId,
         ref: 'Climb'

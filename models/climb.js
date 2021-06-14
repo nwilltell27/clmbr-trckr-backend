@@ -7,7 +7,8 @@ const climbSchema = new Schema({
         required: true
     },
     facility: {
-        type: String,
+        type: Schema.Types.ObjectId,
+        ref: 'Facility',
         required: true
     },
     difficulty: {
