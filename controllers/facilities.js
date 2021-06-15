@@ -4,7 +4,7 @@ module.exports = {
     index,
     create,
     update,
-    deleteFacility
+    delete: deleteFacility
 }
 
 function index(req, res) {

@@ -6,6 +6,5 @@ router.get('/', facilitiesCtrl.index);
 router.post('/', facilitiesCtrl.create);
 router.put('/:id', facilitiesCtrl.update);
 router.delete('/:id', facilitiesCtrl.delete);
-
   
 module.exports = router;
